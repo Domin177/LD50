@@ -327,7 +327,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 202527768}
         m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
-        m_MethodName: MainScene
+        m_MethodName: DescriptionScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -628,7 +628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Start Game
+  m_Text: 'Continue
 
 '
 --- !u!222 &1681167887

@@ -70,7 +70,7 @@ public class FenceScript : MonoBehaviour
     {
         _buildingState = false;
         rigidbody.simulated = true;
-        PathScanner.UpdateFences(1,false);
+        PathScanner.UpdateFences();
     }
     
     public void AttackOneMe(float damage)
@@ -78,7 +78,7 @@ public class FenceScript : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            PathScanner.UpdateFences(-1,false);
+            PathScanner.UpdateFences();
             foreach (EnemyScript enemy in _enemies)
             {
                 if (enemy != null)

@@ -299,6 +299,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _actualFenceScript.Put();
+            _soundScript.PlayPutWallSound();
             _fenceLoader.SetCooldown();
             _fenceSquare.SetActive(false);
             _building = false;
@@ -352,6 +353,7 @@ public class PlayerScript : MonoBehaviour
 
     public void Collect(CollectableScript.CollectType collectType, int amount)
     {
+        _soundScript.PlayPickSound();
         switch (collectType)
         {
             case CollectableScript.CollectType.RifleAmmo:

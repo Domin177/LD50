@@ -15,4 +15,9 @@ public class SceneScript : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
     
+    public void DescriptionScene()
+    {
+        SceneManager.LoadScene("DescriptionScene");
+    }
+    
 }

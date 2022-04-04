@@ -12,12 +12,17 @@ public class SoundScript : MonoBehaviour
     
     [SerializeField]
     private AudioSource chooseSound;
+
+    [SerializeField] private AudioSource messageSendSound;
     
     [SerializeField]
-    private AudioSource messageSendSound;
+    private AudioSource pickSound;
     
     [SerializeField]
     private AudioSource shipHitSound;
+    
+    [SerializeField]
+    private AudioSource putWallSound;
     
     [SerializeField]
     private List<AudioSource> weaponsSound;
@@ -61,9 +66,19 @@ public class SoundScript : MonoBehaviour
         messageSendSound.Play();
     }
 
+    public void PlayPickSound()
+    {
+        pickSound.Play();
+    }
+
     public void PlayShipHitSound()
     {
         shipHitSound.Play();
+    }
+
+    public void PlayPutWallSound()
+    {
+        putWallSound.Play();
     }
 
     public void PlayWeaponSound(int index)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
@@ -66,7 +67,11 @@ public class MenuScript : MonoBehaviour
 
     public void Restart()
     {
-        // SceneManager.LoadScene(1);
+        GlobalVariables.Running = true;
+        GlobalVariables.GameOver = false;
+        Stats.GameTime = new DateTime();
+        Stats.LettersSent = 0;
+        SceneManager.LoadScene("MainScene");
     }
 
     public void Continue()
